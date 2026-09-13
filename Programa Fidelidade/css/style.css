@@ -1,0 +1,695 @@
+/* ======================================================
+   RESET
+====================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#edf4fc;
+    color:#333;
+}
+
+/* ======================================================
+   HEADER
+====================================================== */
+
+header{
+    background:#1e3a8a;
+    color:#fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.container-header{
+
+    max-width:1400px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 35px;
+
+}
+
+/* ======================================================
+   LOGO
+====================================================== */
+
+.logo{
+
+    font-size:34px;
+    font-weight:bold;
+    color:white;
+
+}
+
+/* ======================================================
+   MENU
+====================================================== */
+
+nav{
+
+    display:flex;
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ffd54f;
+
+}
+
+/* ======================================================
+   ÁREA ADMINISTRATIVA
+====================================================== */
+
+.admin a{
+
+    background:white;
+    color:#1e3a8a !important;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.admin a:hover{
+
+    background:#ffd54f;
+
+    color:#1e3a8a !important;
+
+}
+
+/* ======================================================
+   MAIN
+====================================================== */
+
+main{
+
+    max-width:1400px;
+
+    margin:35px auto;
+
+    padding:0 20px;
+
+}
+
+/* ======================================================
+   BANNER
+====================================================== */
+
+.banner{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:45px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.10);
+
+}
+
+.banner-texto{
+
+    width:70%;
+
+}
+
+.banner-texto h2{
+
+    color:#1e3a8a;
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+.banner-texto p{
+
+    font-size:20px;
+
+    line-height:30px;
+
+}
+
+.banner-imagem img{
+
+    width:260px;
+
+    border-radius:10px;
+
+}
+
+/* ======================================================
+   CARDS
+====================================================== */
+
+.cards{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.card{
+
+    flex:1;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card h3{
+
+    color:#1e3a8a;
+
+    margin-bottom:15px;
+
+    font-size:26px;
+
+}
+
+.card p{
+
+    font-size:17px;
+
+    line-height:25px;
+
+}
+
+/* ======================================================
+   COMO FUNCIONA
+====================================================== */
+
+.passos{
+
+    margin-top:50px;
+
+}
+
+.passos h2{
+
+    text-align:center;
+
+    color:#1e3a8a;
+
+    font-size:36px;
+
+    margin-bottom:30px;
+
+}
+
+.passos-container{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.passo{
+
+    flex:1;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.10);
+
+}
+
+.passo h3{
+
+    color:#1e3a8a;
+
+    margin-bottom:15px;
+
+}
+
+/* ======================================================
+   FORMULÁRIOS
+====================================================== */
+
+form{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.10);
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    font-size:16px;
+
+}
+
+select{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:6px;
+
+    font-size:16px;
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    background:#1e3a8a;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#16306f;
+
+}
+
+/* ======================================================
+   RESULTADO DA CONSULTA
+====================================================== */
+
+#resultado{
+
+    margin-top:30px;
+
+}
+
+#resultado p{
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:8px;
+
+    margin-bottom:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+/* ======================================================
+   SOBRE
+====================================================== */
+
+.sobre-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.10);
+
+}
+
+.sobre-texto{
+
+    flex:2;
+
+}
+
+.sobre-texto h2{
+
+    color:#1e3a8a;
+
+    margin-bottom:20px;
+
+}
+
+.sobre-texto p{
+
+    margin-bottom:18px;
+
+    line-height:28px;
+
+    font-size:17px;
+
+}
+
+.sobre-foto{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.sobre-foto img{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #1e3a8a;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.20);
+
+}
+
+/* ======================================================
+   FOOTER
+====================================================== */
+
+footer{
+
+    margin-top:60px;
+
+    background:#1e3a8a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+
+    font-size:17px;
+
+}
+
+/* ======================================================
+   PAINEL ADMINISTRATIVO
+====================================================== */
+
+.painel{
+
+    margin-top:20px;
+
+}
+
+.painel h1{
+
+    color:#1e3a8a;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.boas-vindas{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+.btn-painel{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#1e3a8a;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 30px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-painel:hover{
+
+    background:#16306f;
+
+}
+
+.btn-sair{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#d9534f;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 30px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.btn-sair:hover{
+
+    background:#bb2d3b;
+
+}
+
+/* ======================================================
+   TABELAS
+====================================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+table th{
+
+    background:#1e3a8a;
+
+    color:white;
+
+    padding:14px;
+
+    text-align:left;
+
+}
+
+table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+table tr:hover{
+
+    background:#f5f8fc;
+
+}
+
+/* ======================================================
+   RESPONSIVO
+====================================================== */
+
+@media (max-width:1000px){
+
+    .container-header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    .admin{
+
+        margin-top:15px;
+
+    }
+
+    .banner{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .banner-texto{
+
+        width:100%;
+
+        margin-bottom:25px;
+
+    }
+
+    .banner-imagem img{
+
+        width:220px;
+
+    }
+
+    .cards{
+
+        flex-direction:column;
+
+    }
+
+    .passos-container{
+
+        flex-direction:column;
+
+    }
+
+    .sobre-container{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .painel h1{
+
+        font-size:34px;
+
+    }
+
+    .logo{
+
+        font-size:28px;
+
+    }
+
+}
+
